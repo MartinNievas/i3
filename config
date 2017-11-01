@@ -109,7 +109,7 @@ bindsym $mod+Shift+0 move container to workspace $WS10
 bindsym Mod1+Shift+Left move left
 bindsym Mod1+Shift+Right move right
 # Focus container on the left, bottom, top, right
-bindsym $mod+j focus left
+bindsym $mod+Shift+semicolon focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
