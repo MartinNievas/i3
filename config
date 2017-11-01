@@ -108,6 +108,11 @@ bindsym $mod+Shift+0 move container to workspace $WS10
 # alternatively, you can use the cursor keys:
 bindsym Mod1+Shift+Left move left
 bindsym Mod1+Shift+Right move right
+# Focus container on the left, bottom, top, right
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
 
 ## Moving on
 # Saltar para janela urgente
@@ -329,7 +334,8 @@ mode "   " {
 ## adjustment of i3bar battery reading (only run at the very first login):
 #exec --no-startup-id /usr/bin/adjust_i3statusconf
 exec --no-startup-id sh ~/.config/polybar/launch.sh
-exec --no-startup-id feh --bg-fill Imágenes/winter_trees_snow_night_landscape_96069_3840x2400.jpg 
+exec --no-startup-id feh --bg-fill Imágenes/wallpaper.jpg
+#exec --no-startup-id feh --bg-fill Imágenes/winter_trees_snow_night_landscape_96069_3840x2400.jpg 
 exec --no-startup-id nm-applet
 exec --no-startup-id numlockx
 exec --no-startup-id hp-systray
@@ -397,7 +403,7 @@ colors {
 
 # hide/unhide i3status bar
 #bindsym $mod+m bar mode toggle
-bindsym $mod+l bar mode toggle
+#bindsym $mod+l bar mode toggle
 
 
 #############################
